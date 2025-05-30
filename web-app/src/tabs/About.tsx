@@ -7,7 +7,7 @@ export default function About() {
     <div>
       <p>
         Welcome all to my personal portfolio! My name is Ethan Stein, a software
-        engineer and recent graduate in Computer Science Browse around to see
+        engineer and recent graduate in Computer Science. Browse around to see
         some of my projects and experience.
         <br />
         <br />I am{" "}
