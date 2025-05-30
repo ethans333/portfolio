@@ -9,6 +9,17 @@ export default function History() {
         startDate="June 2024"
         endDate="June 2025"
         link="https://mak.com"
+        skills={[
+          "Python",
+          "Dart",
+          "RabbitMQ",
+          "Unreal Engine",
+          "Flutter",
+          "Hugging Face",
+          "OpenCV",
+          "Docker",
+          "Podman",
+        ]}
       />
       <WorkHistory
         companyName="Tech Think Tank"
@@ -16,6 +27,14 @@ export default function History() {
         startDate="Febuary 2023"
         endDate="June 2024"
         link="https://mak.com"
+        skills={[
+          "Python",
+          "React",
+          "JavaScript",
+          "Tailwind CSS",
+          "TypeScript",
+          "AWS",
+        ]}
       />
     </div>
   );
@@ -27,12 +46,14 @@ function WorkHistory({
   startDate,
   endDate,
   link,
+  skills,
 }: {
   companyName: string;
   description: string;
   startDate: string;
   endDate: string;
   link: string;
+  skills: string[];
 }) {
   return (
     <div>
@@ -45,8 +66,8 @@ function WorkHistory({
         </p>
       </div>
       <p>{description}</p>
-      <div className="mt-2">
-        <Badges badges={["Unity", "C#"]} />
+      <div className="mt-2 w-4/5">
+        <Badges badges={skills} />
       </div>
     </div>
   );
