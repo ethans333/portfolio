@@ -5,15 +5,15 @@ export default function History() {
     <div className="space-y-18 pb-18">
       <Project
         projectName="Army Reserve Mercury"
-        description="Amet dolor nulla ea proident labore irure aliquip sunt commodo non in. Ea ad est anim aliqua ex sint laborum et aliqua ea et ut veniam. Amet ex sunt eiusmod nostrud velit laboris nisi non."
+        description="Army Reserve Mercury is a content management system utilized by the U.S. Amry Reserves. I had further developed this project; adding new features with a team of 3 others. While in development hundereds of soliders used the platform."
         imageUrl="resmer.webp"
         link="https://apps.apple.com/us/app/army-reserve-mercury/id1619569471"
         skills={["React", "Javascript", "PostGres", "SQL", "AWS"]}
       />
       <Project
-        projectName="OpenGL Renderer"
-        description="In quis aliqua reprehenderit aliqua et dolor. Sunt eu ullamco id veniam aute sint pariatur nulla ad ea. Amet mollit ut cillum ipsum elit ut ullamco deserunt laborum commodo esse reprehenderit anim. Excepteur commodo ut laboris cillum ad."
-        imageUrl="https://github.com/ethans333/dungeonGenerator/raw/main/Capture1.JPG"
+        projectName="OpenGL 3D Renderer"
+        description="In order to learn more about C++ and the graphics pipeline I sought out how to build a custom renderer from scratch using Open GL. Obj files can be imported and displayed in a 3D world with custom lighting."
+        imageUrl="https://learnopengl.com/img/getting-started/opengl.jpg"
         link="https://github.com/ethans333/learning"
         skills={["C++", "OpenGL"]}
       />
@@ -23,6 +23,13 @@ export default function History() {
         imageUrl="randdungeon.jpeg"
         link="https://github.com/ethans333/dungeonGenerator"
         skills={["Unity", "C#"]}
+      />
+      <Project
+        projectName="2-3-4 Tree"
+        description="The Two Four Tree project was a class written in Java implementing a Two Four Tree data structure. The project was a school assignment assigned for my Computer Science 2 class. The difficult of implementing this data structure rested in the sheer amount of boolean conditions needed for implementing all of its functionalities."
+        imageUrl="tree.png"
+        link="https://github.com/ethans333/Two-Three-Four-Tree"
+        skills={["Java"]}
       />
     </div>
   );
@@ -43,7 +50,11 @@ function Project({
 }) {
   return (
     <div>
-      <img src={imageUrl} alt={projectName} className="w-full h-64 rounded" />
+      <img
+        src={imageUrl}
+        alt={projectName}
+        className="w-full h-64 rounded object-cover"
+      />
       <h2 className="mt-5 mb-1">
         <a href={link}>{projectName}</a>
       </h2>

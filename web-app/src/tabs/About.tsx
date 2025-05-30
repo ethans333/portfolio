@@ -6,16 +6,16 @@ export default function About() {
   return (
     <div>
       <p>
-        Qui ea veniam eu excepteur ut nostrud eiusmod pariatur fugiat aliqua
-        incididunt. Eu sunt nisi eu minim minim sit ex ullamco cupidatat
-        ullamco. Qui sit fugiat excepteur sit Lorem Lorem laboris esse.
-        Cupidatat elit cupidatat esse consectetur ex. Cillum irure duis sint
-        nulla id ipsum sint proident quis aliqua culpa minim commodo.
+        Welcome all to my personal portfolio! My name is Ethan Stein, a software
+        engineer and recent graduate in Computer Science Browse around to see
+        some of my projects and experience.
         <br />
-        <br />
-        Duis culpa Lorem sunt culpa consequat nostrud culpa. Elit laboris
-        exercitation elit tempor consectetur amet sit ut irure laborum deserunt
-        officia consectetur. Irure cillum consequat qui deserunt elit elit.
+        <br />I am{" "}
+        <p className="italic inline">
+          currently looking for Software Engineering roles
+        </p>
+        . If you have any questions or would like to connect, feel free to{" "}
+        <a href="mailto:ethanmstn33@gmail.com">reach out!</a>
       </p>
       <div className="flex justify-center gap-6 mt-6">
         <a href="https://github.com/ethans333">Github</a>

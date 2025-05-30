@@ -5,7 +5,7 @@ export default function History() {
     <div className="space-y-10 pb-10">
       <WorkHistory
         companyName="MAK Technologies"
-        description="Ad ex aliqua pariatur consectetur consectetur pariatur eiusmod dolore et culpa ullamco aute officia. Culpa duis culpa ipsum proident ipsum aute nisi ullamco proident. Culpa qui eu et exercitation nostrud ex in ipsum aliquip officia do. Duis ipsum velit voluptate cupidatat do consectetur proident exercitation nulla."
+        description="Contributed to a government-contracted real-time simulation project focused on enhancing user interaction with dynamic digital environments. Utilized Python and RabbitMQ to implement communication features between systems. Worked within a four-person Agile team, using Git and Jira to manage development workflows."
         startDate="June 2024"
         endDate="June 2025"
         link="https://mak.com"
@@ -23,10 +23,10 @@ export default function History() {
       />
       <WorkHistory
         companyName="Tech Think Tank"
-        description="Ad ex aliqua pariatur consectetur consectetur pariatur eiusmod dolore et culpa ullamco aute officia. Culpa duis culpa ipsum proident ipsum aute nisi ullamco proident. Culpa qui eu et exercitation nostrud ex in ipsum aliquip officia do. Duis ipsum velit voluptate cupidatat do consectetur proident exercitation nulla."
+        description="Designed and developed Celly Auto SMS, a full-stack platform built with AWS, Python, and React. Created a dynamic workflow builder UI for automated messaging and integrated Amazon Lex for AI-driven chat functionality. Managed the entire project lifecycle independently, from planning through deployment."
         startDate="Febuary 2023"
         endDate="June 2024"
-        link="https://mak.com"
+        link="https://techthinktank.com/"
         skills={[
           "Python",
           "React",
