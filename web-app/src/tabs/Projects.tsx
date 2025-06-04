@@ -25,6 +25,13 @@ export default function History() {
         skills={["Unity", "C#"]}
       />
       <Project
+        projectName="Pokemon API LAMP Stack"
+        description="In order to learn more about SQL and PHP I createad an SQL data base with a PHP web server, all hosted within a docker container."
+        imageUrl="diagram-lamp.jpg"
+        link="https://github.com/ethans333/pokemon-LAMP-stack"
+        skills={["PHP", "SQL", "Docker", "TypeScript", "Python"]}
+      />
+      <Project
         projectName="2-3-4 Tree"
         description="The Two Four Tree project was a class written in Java implementing a Two Four Tree data structure. The project was a school assignment assigned for my Computer Science 2 class. The difficult of implementing this data structure rested in the sheer amount of boolean conditions needed for implementing all of its functionalities."
         imageUrl="tree.png"
