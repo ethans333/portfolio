@@ -4,7 +4,7 @@ export default function About() {
   };
 
   return (
-    <div>
+    <div className="py-2">
       <p>
         Welcome to my personal portfolio! I'm Ethan Stein, a Software Engineer
         and recent Computer Science graduate from the University of Central
