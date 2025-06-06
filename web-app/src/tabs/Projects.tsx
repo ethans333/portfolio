@@ -113,7 +113,7 @@ function Project({ project }: { project: ProjectData }) {
       <img
         src={project.imageUrl}
         alt={project.name}
-        className="w-full h-64 rounded object-cover"
+        className="w-full h-64 rounded object-cover border shadow-lg"
       />
       <h2 className="mt-5 mb-1">
         <a href={project.link}>{project.name}</a>
