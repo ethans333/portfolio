@@ -5,7 +5,10 @@ import History from "./tabs/History";
 
 export default function Menu() {
   return (
-    <Tabs defaultValue="about" className="w-[85vw] lg:w-1/3 items-center mt-8">
+    <Tabs
+      defaultValue="about"
+      className="w-[85vw] lg:w-1/3 2xl:w-1/5 items-center mt-8"
+    >
       <TabsList>
         <TabsTrigger value="about">About</TabsTrigger>
         <TabsTrigger value="projects">Projects</TabsTrigger>
