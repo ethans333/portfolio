@@ -6,11 +6,13 @@ export default function About() {
   return (
     <div>
       <p>
-        Welcome all to my personal portfolio! My name is Ethan Stein, a software
-        engineer and recent graduate in Computer Science. Browse around to see
-        some of my projects and experience.
+        Welcome to my personal portfolio! I'm Ethan Stein, a Software Engineer
+        and recent Computer Science graduate from the University of Central
+        Florida. Feel free to browser around and see some of my projects and
+        industry experience.
         <br />
-        <br />I am{" "}
+        <br />
+        I'm{" "}
         <p className="italic inline">
           currently looking for Software Engineering roles
         </p>
