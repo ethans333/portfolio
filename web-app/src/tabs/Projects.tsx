@@ -35,7 +35,7 @@ const projects: ProjectData[] = [
   new ProjectData(
     "OpenGL 3D Renderer",
     "In order to learn more about C++ and the graphics pipeline I sought out how to build a custom renderer from scratch using Open GL. Obj files can be imported and displayed in a 3D world with custom lighting.",
-    "https://learnopengl.com/img/getting-started/opengl.jpg",
+    "openglrenderer.png",
     "https://github.com/ethans333/learning",
     ["C++", "OpenGL"]
   ),
