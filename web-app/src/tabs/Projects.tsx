@@ -33,6 +33,23 @@ const projects: ProjectData[] = [
     ["React", "Javascript", "PostGres", "SQL", "AWS"]
   ),
   new ProjectData(
+    "Pokemon Full Stack App",
+    "Pokemon App is a project I created to learn more about the full stack software development process using devops technologies like Docker containers, CI/CD pipelines and EC2 Instances.",
+    "pokemon-app.png",
+    "https://github.com/ethans333/pokemon-express",
+    [
+      "TypeScript",
+      "NodeJS",
+      "PostgreSQL",
+      "EC2",
+      "AWS",
+      "React",
+      "Express",
+      "Github Actions",
+      "CI/CD Pipelines",
+    ]
+  ),
+  new ProjectData(
     "OpenGL 3D Renderer",
     "In order to learn more about C++ and the graphics pipeline I sought out how to build a custom renderer from scratch using Open GL. Obj files can be imported and displayed in a 3D world with custom lighting.",
     "openglrenderer.png",
@@ -45,13 +62,6 @@ const projects: ProjectData[] = [
     "randdungeon.jpeg",
     "https://github.com/ethans333/dungeonGenerator",
     ["Unity", "C#"]
-  ),
-  new ProjectData(
-    "Pokemon API LAMP Stack",
-    "In order to learn more about SQL and PHP I createad an SQL data base with a PHP web server, all hosted within a docker container.",
-    "diagram-lamp.jpg",
-    "https://github.com/ethans333/pokemon-LAMP-stack",
-    ["PHP", "SQL", "Docker", "TypeScript", "Python"]
   ),
   new ProjectData(
     "2-3-4 Tree",
