@@ -82,12 +82,10 @@ projects.forEach((project) => {
   });
 });
 
-export default function History() {
+export default function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(projects);
 
   const onSkillFilterUpdate = (selectedSkills: string[]) => {
-    console.log(selectedSkills);
-
     if (selectedSkills.length === 0) {
       setVisibleProjects(projects);
       return;
