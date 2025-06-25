@@ -24,7 +24,7 @@ export default function History() {
       <WorkHistory
         companyName="Tech Think Tank"
         description="Designed and developed Celly Auto SMS, a full-stack platform built with AWS, Python, and React. Created a dynamic workflow builder UI for automated messaging and integrated Amazon Lex for AI-driven chat functionality. Managed the entire project lifecycle independently, from planning through deployment."
-        startDate="Febuary 2023"
+        startDate="February 2023"
         endDate="June 2024"
         link="https://techthinktank.com/"
         skills={[
