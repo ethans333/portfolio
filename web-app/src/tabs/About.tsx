@@ -1,6 +1,6 @@
 export default function About() {
   const handleOpenPdf = () => {
-    window.open("Ethan Stein Resume.pdf", "_blank");
+    window.open("Ethan_Stein_Resume.pdf", "_blank");
   };
 
   return (
