@@ -33,6 +33,28 @@ const projects: ProjectData[] = [
     ["React", "Javascript", "PostGres", "SQL", "AWS"]
   ),
   new ProjectData(
+    "X Finder Job Finder",
+    "A job search platform that allows users to search for jobs using a variety of filters. This was created to learn more about the full stack development process involving technologies like kubernetes and terraform.",
+    "xfinder.png",
+    "https://github.com/ethans333/xfinder-job-search",
+    [
+      "TypeScript",
+      "PostgreSQL",
+      "EKS",
+      "ECR",
+      "Terraform",
+      "Docker",
+      "Kubernetes",
+      "NGINX",
+      "AWS",
+      "React",
+      "Github Actions",
+      "CI/CD Pipelines",
+      "Tailwind CSS",
+      "Flask",
+    ]
+  ),
+  new ProjectData(
     "Pokemon Full Stack App",
     "Pokemon App is a project I created to learn more about the full stack software development process using devops technologies like Docker containers, CI/CD pipelines and EC2 Instances.",
     "pokemon-app.png",
@@ -58,10 +80,10 @@ const projects: ProjectData[] = [
   ),
   new ProjectData(
     "Random Dungeon Generator",
-    "Random Dungeon Generator was a project written in C#. How it works is simple: rooms are generated with a random size while clustered together, they are then pushed apart from each other and then connected via hallways. I created it with the intrigue of learning more about Unity and C#. The algorithm used is roughly based off of this algorithm.",
-    "randdungeon.jpeg",
-    "https://github.com/ethans333/dungeonGenerator",
-    ["Unity", "C#"]
+    "Random Dungeon Generator was a project written in C++. This project was created to learn more about the Unreal Engine development process.",
+    "Dungeon1.png",
+    "https://github.com/ethans333/UnrealEngineRandomDungeonGenerator",
+    ["Unreal Engine", "C++"]
   ),
   new ProjectData(
     "2-3-4 Tree",
