@@ -9,13 +9,7 @@ class ProjectData {
   link: string;
   skills: string[];
 
-  constructor(
-    name: string,
-    description: string,
-    imageUrl: string,
-    link: string,
-    skills: string[]
-  ) {
+  constructor(name: string, description: string, imageUrl: string, link: string, skills: string[]) {
     this.name = name;
     this.description = description;
     this.imageUrl = imageUrl;
@@ -25,6 +19,13 @@ class ProjectData {
 }
 
 const projects: ProjectData[] = [
+  new ProjectData(
+    "APC Simulator",
+    "A custom-built APC simulation project designed to strengthen my expertise in Unreal Engine. Through its development, I worked extensively with Unreal C++, Blueprints, and multiplayer replication, gaining hands-on experience with both gameplay programming and networked systems.",
+    "apc.png",
+    "https://github.com/ethans333/APC_Project",
+    ["C++", "Unreal Engine"]
+  ),
   new ProjectData(
     "Army Reserve Mercury",
     "Army Reserve Mercury is a content management system utilized by the U.S. Army Reserves. I had further developed this project; adding new features with a team of 3 others. While in development hundreds of soldiers used the platform.",
@@ -59,17 +60,7 @@ const projects: ProjectData[] = [
     "Pokemon App is a project I created to learn more about the full stack software development process using devops technologies like Docker containers, CI/CD pipelines and EC2 Instances.",
     "pokemon-app.png",
     "https://github.com/ethans333/pokemon-express",
-    [
-      "TypeScript",
-      "NodeJS",
-      "PostgreSQL",
-      "EC2",
-      "AWS",
-      "React",
-      "Express",
-      "Github Actions",
-      "CI/CD Pipelines",
-    ]
+    ["TypeScript", "NodeJS", "PostgreSQL", "EC2", "AWS", "React", "Express", "Github Actions", "CI/CD Pipelines"]
   ),
   new ProjectData(
     "OpenGL 3D Renderer",
@@ -140,11 +131,7 @@ export default function Projects() {
 function Project({ project }: { project: ProjectData }) {
   return (
     <div>
-      <img
-        src={project.imageUrl}
-        alt={project.name}
-        className="w-full h-64 rounded object-cover border shadow-lg"
-      />
+      <img src={project.imageUrl} alt={project.name} className="w-full h-64 rounded object-cover border shadow-lg" />
       <h2 className="mt-5 mb-1">
         <a href={project.link}>{project.name}</a>
       </h2>
@@ -156,13 +143,7 @@ function Project({ project }: { project: ProjectData }) {
   );
 }
 
-function SkillFilter({
-  skills,
-  onUpdate,
-}: {
-  skills: string[];
-  onUpdate: (skills: string[]) => void;
-}) {
+function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills: string[]) => void }) {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
 
   const handleSkillClick = (skill: string) => {
@@ -188,9 +169,7 @@ function SkillFilter({
       <div className="w-full flex justify-between text-sm">
         <p className="italic opacity-50">Filter Projects by Skill:</p>
         <p
-          className={`cursor-pointer text-blue-600 hover:underline ${
-            selectedSkills.length === 0 ? "hidden" : ""
-          }`}
+          className={`cursor-pointer text-blue-600 hover:underline ${selectedSkills.length === 0 ? "hidden" : ""}`}
           onClick={clearFilters}
         >
           Clear Filters
@@ -201,10 +180,7 @@ function SkillFilter({
           <Badge
             key={skill}
             variant={"secondary"}
-            className={`cursor-pointer ${
-              selectedSkills.includes(skill) &&
-              "bg-blue-600 text-accent-foreground"
-            }`}
+            className={`cursor-pointer ${selectedSkills.includes(skill) && "bg-blue-600 text-accent-foreground"}`}
             onClick={() => handleSkillClick(skill)}
           >
             {skill}
