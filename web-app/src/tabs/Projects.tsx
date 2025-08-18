@@ -117,9 +117,11 @@ export default function Projects() {
   };
 
   return (
-    <div className="space-y-10">
-      <SkillFilter skills={skills} onUpdate={onSkillFilterUpdate} />
-      <div className="space-y-18 pb-18">
+    <div className="space-y-10 md:w-[90vw] max-w-[1400px]">
+      <div className="mx-auto md:w-3/4 xl:w-1/2">
+        <SkillFilter skills={skills} onUpdate={onSkillFilterUpdate} />
+      </div>
+      <div className="space-y-18 md:pt-5 pb-18 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
         {visibleProjects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
