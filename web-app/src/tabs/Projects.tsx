@@ -182,7 +182,7 @@ function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills
           <Badge
             key={skill}
             variant={"secondary"}
-            className={`cursor-pointer ${selectedSkills.includes(skill) && "bg-blue-600 text-accent-foreground"}`}
+            className={`cursor-pointer ${selectedSkills.includes(skill) && "bg-blue-600 text-white"}`}
             onClick={() => handleSkillClick(skill)}
           >
             {skill}
