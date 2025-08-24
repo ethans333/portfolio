@@ -1,13 +1,14 @@
 import { Badge } from "@/components/ui/badge";
+import { Marquee } from "@/components/ui/marquee";
 
-export default function Badges({ badges }: { badges: string[] }) {
+export default function BadgeMarquee({ badges }: { badges: string[] }) {
   return (
-    <div className="flex w-full flex-wrap gap-2">
+    <Marquee repeat={5}>
       {...badges.map((badge) => (
         <Badge key={badge} variant={"secondary"}>
           {badge}
         </Badge>
       ))}
-    </div>
+    </Marquee>
   );
 }

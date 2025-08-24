@@ -27,14 +27,7 @@ export default function History() {
         startDate="February 2023"
         endDate="June 2024"
         link="https://techthinktank.com/"
-        skills={[
-          "Python",
-          "React",
-          "JavaScript",
-          "Tailwind CSS",
-          "TypeScript",
-          "AWS",
-        ]}
+        skills={["Python", "React", "JavaScript", "Tailwind CSS", "TypeScript", "AWS"]}
       />
     </div>
   );

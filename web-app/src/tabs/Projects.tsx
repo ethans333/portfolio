@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import Badges from "@/components/ui/badges";
+import BadgesMarquee from "@/components/ui/badges-marquee";
 import { useState } from "react";
 import { Tilt } from "@/components/motion-primitives/tilt";
 
@@ -149,7 +149,7 @@ function Project({ project }: { project: ProjectData }) {
             <h2 className="pt-1 opacity-90">{project.name}</h2>
             <p className="pt-3 pb-3 opacity-70">{project.description}</p>
             <div className="w-[80vw] md:w-full">
-              <Badges badges={project.skills} />
+              <BadgesMarquee badges={project.skills} />
             </div>
           </div>
         </div>

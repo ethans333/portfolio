@@ -1,3 +1,7 @@
+import { Badge } from "@/components/ui/base-badge";
+import { Github, Linkedin, Scroll } from "lucide-react";
+import { TextShimmer } from "@/components/motion-primitives/text-shimmer";
+
 export default function About() {
   const handleOpenPdf = () => {
     window.open("Ethan_Stein_Resume.pdf", "_blank");
@@ -11,14 +15,31 @@ export default function About() {
         experience!
         <br />
         <br />
-        I'm <p className="italic inline">currently looking for Software Engineering roles</p>. If you have any questions
-        or would like to connect, feel free to <a href="mailto:ethanmstn33@gmail.com">reach out!</a>
+        I'm
+        <TextShimmer
+          duration={1.2}
+          className="pl-1 [--base-color:var(--color-blue-600)] [--base-gradient-color:var(--color-blue-200)] dark:[--base-color:var(--color-blue-700)] dark:[--base-gradient-color:var(--color-blue-400)]"
+        >
+          currently looking for Software Engineering roles
+        </TextShimmer>
+        . If you have any questions or would like to connect, feel free to{" "}
+        <a href="mailto:ethanmstn33@gmail.com">reach out!</a>
       </p>
       <div className="flex justify-center gap-6 mt-6">
-        <a href="https://github.com/ethans333">Github</a>
-        <a href="https://www.linkedin.com/in/ethan-stein-231527256/">LinkedIn</a>
+        <a href="https://github.com/ethans333">
+          <Badge variant="primary" appearance="light">
+            <Github /> Github
+          </Badge>
+        </a>
+        <a href="https://www.linkedin.com/in/ethan-stein-231527256/">
+          <Badge variant="primary" appearance="light">
+            <Linkedin /> LinkedIn
+          </Badge>
+        </a>
         <a className="cursor-pointer" onClick={handleOpenPdf}>
-          Resume
+          <Badge variant="primary" appearance="light">
+            <Scroll /> Résumé
+          </Badge>
         </a>
       </div>
     </div>
