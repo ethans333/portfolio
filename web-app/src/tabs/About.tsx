@@ -16,10 +16,7 @@ export default function About() {
         <br />
         <br />
         I'm
-        <TextShimmer
-          duration={1.2}
-          className="pl-1 [--base-color:var(--color-blue-600)] [--base-gradient-color:var(--color-blue-200)] dark:[--base-color:var(--color-blue-700)] dark:[--base-gradient-color:var(--color-blue-400)]"
-        >
+        <TextShimmer duration={1.2} className="pl-1">
           currently looking for Software Engineering roles
         </TextShimmer>
         . If you have any questions or would like to connect, feel free to{" "}

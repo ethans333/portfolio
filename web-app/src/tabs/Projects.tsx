@@ -1,7 +1,8 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge, BadgeDot } from "@/components/ui/base-badge";
 import BadgesMarquee from "@/components/ui/badges-marquee";
 import { useState } from "react";
 import { Tilt } from "@/components/motion-primitives/tilt";
+import { Filter } from "lucide-react";
 
 class ProjectData {
   name: string;
@@ -179,28 +180,34 @@ function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills
     onUpdate([]);
   };
 
+  const ClearFilterBadge = selectedSkills.length > 0 && (
+    <Badge variant={"destructive"} appearance={"light"} className="cursor-pointer" onClick={clearFilters}>
+      <Filter />
+      Clear Filters
+    </Badge>
+  );
+
   return (
     <div className="space-y-2 mt-2">
-      <div className="w-full flex justify-between text-sm">
-        <p className="italic opacity-50">Filter Projects by Skill:</p>
-        <p
-          className={`cursor-pointer text-blue-600 hover:underline ${selectedSkills.length === 0 ? "hidden" : ""}`}
-          onClick={clearFilters}
-        >
-          Clear Filters
-        </p>
-      </div>
       <div className="flex w-full flex-wrap gap-2">
-        {skills.map((skill) => (
-          <Badge
-            key={skill}
-            variant={"secondary"}
-            className={`cursor-pointer ${selectedSkills.includes(skill) && "bg-blue-600 text-white"}`}
-            onClick={() => handleSkillClick(skill)}
-          >
-            {skill}
-          </Badge>
-        ))}
+        {[
+          <Badge variant={"secondary"} appearance={"ghost"} className="px-1">
+            <Filter />
+            Filter By Skill
+          </Badge>,
+          ...skills.map((skill) => (
+            <Badge
+              key={skill}
+              variant={"primary"}
+              className="cursor-pointer"
+              appearance={selectedSkills.includes(skill) ? "default" : "light"}
+              onClick={() => handleSkillClick(skill)}
+            >
+              {skill}
+            </Badge>
+          )),
+          ClearFilterBadge,
+        ]}
       </div>
     </div>
   );
