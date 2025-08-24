@@ -1,8 +1,8 @@
-import { Badge, BadgeDot } from "@/components/ui/base-badge";
+import { Badge } from "@/components/ui/base-badge";
 import BadgesMarquee from "@/components/ui/badges-marquee";
 import { useState } from "react";
 import { Tilt } from "@/components/motion-primitives/tilt";
-import { Filter } from "lucide-react";
+import { Filter, X } from "lucide-react";
 
 class ProjectData {
   name: string;
@@ -182,7 +182,7 @@ function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills
 
   const ClearFilterBadge = selectedSkills.length > 0 && (
     <Badge variant={"destructive"} appearance={"light"} className="cursor-pointer" onClick={clearFilters}>
-      <Filter />
+      <X />
       Clear Filters
     </Badge>
   );
@@ -191,7 +191,7 @@ function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills
     <div className="space-y-2 mt-2">
       <div className="flex w-full flex-wrap gap-2">
         {[
-          <Badge variant={"secondary"} appearance={"ghost"} className="px-1">
+          <Badge variant={"secondary"} appearance={"ghost"}>
             <Filter />
             Filter By Skill
           </Badge>,
