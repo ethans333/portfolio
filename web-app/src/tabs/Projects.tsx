@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import Badges from "@/components/ui/badges";
 import { useState } from "react";
+import { Tilt } from "@/components/motion-primitives/tilt";
 
 class ProjectData {
   name: string;
@@ -76,13 +77,6 @@ const projects: ProjectData[] = [
     "https://github.com/ethans333/UnrealEngineRandomDungeonGenerator",
     ["Unreal Engine", "C++"]
   ),
-  new ProjectData(
-    "2-3-4 Tree",
-    "The Two Four Tree project was a class written in Java implementing a Two Four Tree data structure. The project was a school assignment assigned for my Computer Science 2 class. The difficult of implementing this data structure rested in the sheer amount of boolean conditions needed for implementing all of its functionalities.",
-    "tree.png",
-    "https://github.com/ethans333/Two-Three-Four-Tree",
-    ["Java"]
-  ),
 ];
 
 const skills: string[] = [];
@@ -121,7 +115,7 @@ export default function Projects() {
       <div className="mx-auto md:w-3/4 xl:w-1/2">
         <SkillFilter skills={skills} onUpdate={onSkillFilterUpdate} />
       </div>
-      <div className="space-y-18 md:pt-5 pb-18 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-10">
+      <div className="columns-1 md:columns-2 xl:columns-3 gap-6">
         {visibleProjects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
@@ -132,16 +126,33 @@ export default function Projects() {
 
 function Project({ project }: { project: ProjectData }) {
   return (
-    <div>
-      <img src={project.imageUrl} alt={project.name} className="w-full h-64 rounded object-cover border shadow-lg" />
-      <h2 className="mt-5 mb-1">
-        <a href={project.link}>{project.name}</a>
-      </h2>
-      <p>{project.description}</p>
-      <div className="mt-2 w-4/5">
-        <Badges badges={project.skills} />
-      </div>
-    </div>
+    <Tilt rotationFactor={8} isRevese>
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block no-underline text-inherit"
+        style={{ color: "inherit", textDecoration: "none" }}
+      >
+        <div
+          style={{
+            borderRadius: "12px",
+          }}
+          className="flex flex-col mb-6 overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
+        >
+          <img
+            src={project.imageUrl}
+            alt={project.name}
+            className="w-full h-64 rounded object-cover border shadow-lg"
+          />
+          <div className="px-5 pt-5.5 pb-5">
+            <h2 className="pt-1 opacity-90">{project.name}</h2>
+            <p className="pt-3 pb-3 opacity-70">{project.description}</p>
+            <Badges badges={project.skills} />
+          </div>
+        </div>
+      </a>
+    </Tilt>
   );
 }
 
