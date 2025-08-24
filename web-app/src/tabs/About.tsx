@@ -19,22 +19,21 @@ export default function About() {
         <TextShimmer duration={1.2} className="pl-1">
           currently looking for Software Engineering roles
         </TextShimmer>
-        . If you have any questions or would like to connect, feel free to{" "}
-        <a href="mailto:ethanmstn33@gmail.com">reach out!</a>
+        . If you have any questions or would like to connect, feel free to reach out!
       </p>
       <div className="flex justify-center gap-6 mt-6">
         <a href="https://github.com/ethans333">
-          <Badge variant="primary" appearance="light">
+          <Badge variant="secondary" appearance="light">
             <Github /> Github
           </Badge>
         </a>
         <a href="https://www.linkedin.com/in/ethan-stein-231527256/">
-          <Badge variant="primary" appearance="light">
+          <Badge variant="secondary" appearance="light">
             <Linkedin /> LinkedIn
           </Badge>
         </a>
         <a className="cursor-pointer" onClick={handleOpenPdf}>
-          <Badge variant="primary" appearance="light">
+          <Badge variant="secondary" appearance="light">
             <Scroll /> Résumé
           </Badge>
         </a>
