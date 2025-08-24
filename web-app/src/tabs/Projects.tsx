@@ -148,7 +148,9 @@ function Project({ project }: { project: ProjectData }) {
           <div className="px-5 pt-5.5 pb-5">
             <h2 className="pt-1 opacity-90">{project.name}</h2>
             <p className="pt-3 pb-3 opacity-70">{project.description}</p>
-            <Badges badges={project.skills} />
+            <div className="w-[80vw] md:w-full">
+              <Badges badges={project.skills} />
+            </div>
           </div>
         </div>
       </a>
