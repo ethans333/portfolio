@@ -39,7 +39,6 @@ function WorkHistory({
   description,
   startDate,
   endDate,
-  link,
   skills,
 }: {
   companyName: string;
