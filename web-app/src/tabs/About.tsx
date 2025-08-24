@@ -16,7 +16,7 @@ export default function About() {
         <br />
         <br />
         I'm
-        <TextShimmer duration={1.2} className="pl-1">
+        <TextShimmer duration={1.2} className="pl-1 inline">
           currently looking for Software Engineering roles
         </TextShimmer>
         . If you have any questions or would like to connect, feel free to reach out!

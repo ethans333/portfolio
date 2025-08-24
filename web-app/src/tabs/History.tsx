@@ -54,7 +54,7 @@ function WorkHistory({
       style={{
         borderRadius: "12px",
       }}
-      className="w-[80vw] xl:w-[37vw] max-w-[600px] px-7 pt-8 pb-7 border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
+      className="w-[90vw] xl:w-[37vw] max-w-[600px] px-7 pt-8 pb-7 border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
     >
       <div className="lg:flex justify-between items-center">
         <h2 className="mb-1">{companyName}</h2>
@@ -71,5 +71,5 @@ function WorkHistory({
 }
 
 function VDotLine() {
-  return <div className="border-l-4 border-dashed border-secondary h-32"></div>;
+  return <div className="border-l-4 border-dashed border-secondary h-24 md:h-32"></div>;
 }

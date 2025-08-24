@@ -191,7 +191,7 @@ function SkillFilter({ skills, onUpdate }: { skills: string[]; onUpdate: (skills
     <div className="space-y-2 mt-2">
       <div className="flex w-full flex-wrap gap-2">
         {[
-          <Badge variant={"secondary"} appearance={"ghost"}>
+          <Badge variant={"secondary"} appearance={"ghost"} className="px-1">
             <Filter />
             Filter By Skill
           </Badge>,
