@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/base-badge";
-import { Github, Linkedin, Scroll } from "lucide-react";
+import { Github, Linkedin, Scroll, Mail } from "lucide-react";
 import { TextShimmer } from "@/components/motion-primitives/text-shimmer";
 
 export default function About() {
@@ -10,16 +10,21 @@ export default function About() {
   return (
     <div className="py-2">
       <p>
-        Welcome to my personal portfolio! I'm Ethan Stein, a Software Engineer and recent Computer Science graduate from
-        the University of Central Florida. Feel free to browse around and see some of my projects and industry
-        experience!
+        <TextShimmer className="inline" duration={1.2}>
+          Welcome to my personal portfolio!
+        </TextShimmer>{" "}
+        I'm Ethan Stein, a Software Engineer and recent Computer Science graduate from the University of Central
+        Florida. Feel free to browse around and see some of my projects and industry experience!
         <br />
         <br />
-        I'm
         <TextShimmer duration={1.2} className="pl-1 inline">
-          currently looking for Software Engineering roles
+          I'm currently looking for Software Engineering roles
         </TextShimmer>
-        . If you have any questions or would like to connect, feel free to reach out!
+        . If you have any questions or would like to connect, feel free to{" "}
+        <a href="mailto:ethanmstn33@gmail.com" className="!text-foreground">
+          email me <Mail className="inline mb-[3px]" size={16} />
+        </a>
+        .
       </p>
       <div className="flex justify-center gap-6 mt-6">
         <a href="https://github.com/ethans333">
