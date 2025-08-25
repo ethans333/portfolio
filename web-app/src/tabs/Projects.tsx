@@ -146,12 +146,12 @@ function Project({ project }: { project: ProjectData }) {
             alt={project.name}
             className="w-full h-64 rounded object-cover border shadow-lg"
           />
-          <div className="px-5.5 pt-5.5 pb-4">
+          <div className="px-5.5 pt-5.5">
             <h2 className="pt-1 opacity-90">{project.name}</h2>
             <p className="pt-3 pb-2 opacity-70">{project.description}</p>
-            <div className="w-[80vw] md:w-full">
-              <BadgesMarquee badges={project.skills} />
-            </div>
+          </div>
+          <div className="w-[85vw] md:w-full pb-4">
+            <BadgesMarquee badges={project.skills} />
           </div>
         </div>
       </a>
