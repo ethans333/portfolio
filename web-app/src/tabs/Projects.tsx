@@ -112,7 +112,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="space-y-10 md:w-[90vw] max-w-[1400px] pb-10">
+    <div className="space-y-10 md:w-[90vw] max-w-[1400px] pb-10 lg:pb-32">
       <div className="mx-auto md:w-3/4 xl:w-1/2">
         <SkillFilter skills={skills} onUpdate={onSkillFilterUpdate} />
       </div>
