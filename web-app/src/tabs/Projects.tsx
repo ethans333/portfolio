@@ -31,7 +31,7 @@ const projects: ProjectData[] = [
   new ProjectData(
     "Army Reserve Mercury",
     "Army Reserve Mercury is a content management system utilized by the U.S. Army Reserves. I had further developed this project; adding new features with a team of 3 others. While in development hundreds of soldiers used the platform.",
-    "resmer.webp",
+    "arm.jpeg",
     "https://apps.apple.com/us/app/army-reserve-mercury/id1619569471",
     ["React", "Javascript", "PostGres", "SQL", "AWS"]
   ),
