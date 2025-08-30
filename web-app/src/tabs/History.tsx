@@ -83,23 +83,11 @@ function CurrentPosition({ companyName, startDate }: { companyName: string; star
         <p className="opacity-50 mt-auto pb-1">{startDate}</p>
       </div>
       <p className="py-2">
-        <TextScramble className="font-mono text-sm line-clamp-3" duration={Infinity} characterSet=". ">
+        <TextScramble className="font-mono text-sm line-clamp-1 lg:line-clamp-3" duration={Infinity} characterSet=". ">
           .Incididunt non officia cillum incididunt et amet eu nulla in duis deserunt labore. Amet nulla sit sit
           consectetur dolore occaecat reprehenderit voluptate aliqua. Nostrud occaecat dolor sint Lorem id sint aliqua
           ullamco aliquip.
         </TextScramble>
-        <br />
-        <div className="flex space-x-10">
-          <TextScramble className="font-mono text-sm line-clamp-1" duration={Infinity} characterSet=". ">
-            .xxxxxxxxxxxxxx
-          </TextScramble>
-          <TextScramble className="font-mono text-sm line-clamp-1" duration={Infinity} characterSet=". ">
-            .xxxxxxx
-          </TextScramble>
-          <TextScramble className="font-mono text-sm line-clamp-1" duration={Infinity} characterSet=". ">
-            .xxxxxxxxxxxxxxxxxxxxx
-          </TextScramble>
-        </div>
       </p>
     </WorkCard>
   );

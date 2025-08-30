@@ -54,9 +54,10 @@ export function TextScramble({
         if (progress * text.length > i) {
           scrambled += text[i];
         } else {
+          if (Math.random() < 0.01) j = 0;
+
           if (hidden && Math.random() > 0.25 && j < hidden.length) {
-            scrambled += hidden[j];
-            j++;
+            scrambled += hidden[j++];
           } else {
             scrambled += characterSet[Math.floor(Math.random() * characterSet.length)];
           }
