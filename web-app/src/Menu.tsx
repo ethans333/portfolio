@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import About from "./tabs/About";
-import Projects from "./tabs/Projects";
+import Projects from "./tabs/Projects/Projects";
 import History from "./tabs/History";
 
 export default function Menu() {
